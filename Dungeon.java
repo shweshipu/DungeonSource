@@ -88,8 +88,12 @@ this task
 
 			case 3: return new Thief();
 
-			default: System.out.println("invalid choice, returning Thief");
-				     return new Thief();
+		//	default: System.out.println("invalid choice, returning Thief");
+		//		     return new Thief();
+      
+         default: System.out.println("invalid choice, choose 1, 2, or 3");
+         return chooseHero();
+      
 		}//end switch
 	}//end chooseHero method
 
