@@ -26,7 +26,7 @@
  * @author
  * @version 1.0
  */
-
+//Here is a comment to test the changes
 
 public abstract class Hero extends DungeonCharacter
 {
