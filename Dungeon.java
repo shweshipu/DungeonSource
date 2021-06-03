@@ -44,7 +44,8 @@
 
 */
 
-//adding here my name iso
+
+
 public class Dungeon
 {
     public static void main(String[] args)
@@ -101,18 +102,28 @@ a polymorphic reference (Monster) to accomplish this task.
 		int choice;
 
 		choice = (int)(Math.random() * 3) + 1;
-
-		switch(choice)
-		{
-			case 1: return new Ogre();
-
-			case 2: return new Gremlin();
-
-			case 3: return new Skeleton();
-
-			default: System.out.println("invalid choice, returning Skeleton");
-				     return new Skeleton();
-		}//end switch
+		
+		//Default never run in the switch statement because there is no other possibility than 3 group of Monsters
+			//therefore, if statement fit better in this code to make it cleaner and understandable 
+		if (choice == 1) return new Ogre();
+		else if (choice == 2) return new Gremlin();
+		else  return new Skeleton();
+		
+				/*
+				switch(choice)
+				{
+					case 1: return new Ogre();
+		
+					case 2: return new Gremlin();
+		
+					case 3: return new Skeleton();
+		
+					default: System.out.println("invalid choice, returning Skeleton");
+						     return new Skeleton();
+				}//end switch
+				*/
+		
+		
 	}//end generateMonster method
 
 /*-------------------------------------------------------------------
