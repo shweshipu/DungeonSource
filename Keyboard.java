@@ -15,7 +15,7 @@ public class Keyboard
 
    private static boolean printErrors = true;
    private static int errorCount = 0;
-
+   
    //-----------------------------------------------------------------
    //  Returns the current error count.
    //-----------------------------------------------------------------
@@ -130,7 +130,7 @@ public class Keyboard
 
       return token;
    }
-
+   
    //-----------------------------------------------------------------
    //  Returns true if there are no more tokens to read on the
    //  current input line.
@@ -141,7 +141,7 @@ public class Keyboard
    }
 
    //*************  Reading Section  *********************************
-
+   
    //-----------------------------------------------------------------
    //  Returns a string read from standard input.
    //-----------------------------------------------------------------
@@ -164,7 +164,7 @@ public class Keyboard
       }
       return str;
    }
-
+   /*
    //-----------------------------------------------------------------
    //  Returns a space-delimited substring (a word) read from
    //  standard input.
@@ -210,7 +210,7 @@ public class Keyboard
       }
       return bool;
    }
-
+   */
    //-----------------------------------------------------------------
    //  Returns a character read from standard input.
    //-----------------------------------------------------------------
@@ -255,7 +255,7 @@ public class Keyboard
       }
       return value;
    }
-
+   /*
    //-----------------------------------------------------------------
    //  Returns a long integer read from standard input.
    //-----------------------------------------------------------------
@@ -312,4 +312,5 @@ public class Keyboard
       }
       return value;
    }
+   */
 }
