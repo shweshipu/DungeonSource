@@ -20,6 +20,7 @@ public class Gremlin extends Monster
 
     }//end constructor
 
+	@Override
 	public void attack(DungeonCharacter opponent)
 	{
 		System.out.println(name + " jabs his kris at " +

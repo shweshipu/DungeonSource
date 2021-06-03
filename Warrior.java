@@ -41,6 +41,7 @@ public class Warrior extends Hero
 
 	}//end crushingBlow method
 
+	@Override
 	public void attack(DungeonCharacter opponent)
 	{
 		System.out.println(name + " swings a mighty sword at " +

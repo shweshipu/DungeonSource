@@ -39,6 +39,7 @@ public class Sorceress extends Hero
     }//end increaseHitPoints method
 
 //-----------------------------------------------------------------
+	@Override
 	public void attack(DungeonCharacter opponent)
 	{
 		System.out.println(name + " casts a spell of fireball at " +
