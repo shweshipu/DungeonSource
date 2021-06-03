@@ -76,7 +76,7 @@ this task
 						   "2. Sorceress\n" +
 						   "3. Thief");
 		choice = Keyboard.readInt();
-
+		//hiiiiiiii
 		switch(choice)
 		{
 			case 1: return new Warrior();
