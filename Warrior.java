@@ -20,10 +20,16 @@ public class Warrior extends Hero
 
 		super("Warrior", 125, 4, .8, 35, 60, .2);
 
-
     }//end constructor
-
-
+    
+    @Override
+    public void initAttacks()
+    {
+    	attackList.add(new AttackDefault(this, chanceToHit, damageMin, damageMax, " swings a mighty sword at "));
+		attackList.add(new AttackCrushingBlow(this, chanceToHit, damageMin, damageMax));
+    }
+    
+    /*
 	public void crushingBlow(DungeonCharacter opponent)
 	{
 		if (Math.random() <= .4)
@@ -40,7 +46,8 @@ public class Warrior extends Hero
 		}//blow failed
 
 	}//end crushingBlow method
-
+	*/
+    /*
 	@Override
 	public void attack(DungeonCharacter opponent)
 	{
@@ -48,10 +55,10 @@ public class Warrior extends Hero
 							opponent.getName() + ":");
 		super.attack(opponent);
 	}//end override of attack method
+	*/
 
 
-
-
+	/*
     public void battleChoices(DungeonCharacter opponent)
 	{
 		int choice;
@@ -82,5 +89,5 @@ public class Warrior extends Hero
 		} while(numTurns > 0);
 
     }//end battleChoices method
-
+	*/
 }//end Hero class

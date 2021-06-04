@@ -57,6 +57,7 @@ public class Dungeon
 		do
 		{
 		    theHero = chooseHero();
+			theHero.initAttacks();
 		    theMonster = generateMonster();
 			battle(theHero, theMonster);
 
@@ -90,7 +91,6 @@ this task
 
 		//	default: System.out.println("invalid choice, returning Thief");
 		//		     return new Thief();
-      
          default: System.out.println("invalid choice, choose 1, 2, or 3");
          return chooseHero();
       
@@ -157,6 +157,8 @@ user has the option of quitting.
 		System.out.println(theHero.getName() + " battles " +
 							theMonster.getName());
 		System.out.println("---------------------------------------------");
+		
+		
 
 		//do battle
 		while (theHero.isAlive() && theMonster.isAlive() && pause != 'q')
@@ -166,7 +168,7 @@ user has the option of quitting.
           if(Math.random() < 0.5)
           {
              //hero goes first
-			    theHero.battleChoices(theMonster);
+			    TurnManager.battleChoices(theHero, theMonster);
           }
             //monster's turn (provided it's still alive!)
           else if (theMonster.isAlive())

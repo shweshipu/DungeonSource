@@ -32,6 +32,20 @@ public abstract class Hero extends DungeonCharacter
 {
 	protected double chanceToBlock;
 	protected int numTurns;
+	
+	//list of attacks this hero can use
+	
+
+	public int getNumTurns() {
+		return numTurns;
+	}
+
+	public void setNumTurns(int numTurns) {
+		this.numTurns = numTurns;
+	}
+	public void changeNumTurns(int turns) {
+		this.numTurns = numTurns+turns;
+	}
 
 //-----------------------------------------------------------------
 //calls base constructor and gets name of hero from user
@@ -43,7 +57,9 @@ public abstract class Hero extends DungeonCharacter
 	this.chanceToBlock = chanceToBlock;
 	readName();
   }
-
+  
+  
+  abstract public void initAttacks();
 /*-------------------------------------------------------
 readName obtains a name for the hero from the user
 
