@@ -1,11 +1,12 @@
 
-public class SurpriseAttack extends Attack{
-	
-	DefaultAttack defaultAttack;
-	
-	SurpriseAttack(Hero attacker, double chanceToHit, int damageMin, int damageMax){
+public class AttackSurprise extends Attack{
+	String name = "Surprise attack";
+	AttackDefault defaultAttack;
+	//@Override
+	Hero attacker;
+	AttackSurprise(Hero attacker, double chanceToHit, int damageMin, int damageMax){
 		super(attacker,  chanceToHit, damageMin, damageMax);
-		defaultAttack = new DefaultAttack(attacker,  chanceToHit, damageMin, damageMax);
+		defaultAttack = new AttackDefault(attacker,  chanceToHit, damageMin, damageMax);
 	}
 	
 	@Override
@@ -17,7 +18,7 @@ public class SurpriseAttack extends Attack{
 			System.out.println("Surprise attack was successful!\n" +
 								attacker.getName() + " gets an additional turn.");
 			//add a turn
-			attacker.changeNumTurns(1);  ///what should I do here????
+			TurnManager.numTurns++;  //this is a reallly bad way to do it but i just want it to run
 			defaultAttack.doAttack(opponent);
 		}//end surprise
 		else if (surprise >= .9)
