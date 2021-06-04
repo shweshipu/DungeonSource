@@ -13,22 +13,18 @@
 
 public class Sorceress extends Hero
 {
-	/*(
 	private final int MIN_ADD = 25;
 	private final int MAX_ADD = 50;
-	*/
+
 //-----------------------------------------------------------------
     public Sorceress()
 	{
 		super("Sorceress", 75, 5, .7, 25, 50, .3);
-		//add attacks to list
-		attackList.add(new AttackDefault(this, chanceToHit, damageMin, damageMax));
-		attackList.add(new AttackSurprise(this, chanceToHit, damageMin, damageMax));
-		
+
+
     }//end constructor
 
 //-----------------------------------------------------------------
-    /*
 	public void increaseHitPoints()
     {
 	    int hPoints;
@@ -41,10 +37,8 @@ public class Sorceress extends Hero
 		 System.out.println();
 
     }//end increaseHitPoints method
-    */
 
 //-----------------------------------------------------------------
-	/*
 	@Override
 	public void attack(DungeonCharacter opponent)
 	{
@@ -83,5 +77,5 @@ public class Sorceress extends Hero
 		} while(numTurns > 0 && hitPoints > 0 && opponent.getHitPoints() > 0);
 
     }//end overridden method
-	*/
+
 }//end class

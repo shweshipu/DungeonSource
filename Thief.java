@@ -11,17 +11,15 @@
 
 public class Thief extends Hero
 {
-	
+
     public Thief()
 	{
 		super("Thief", 75, 6, .8, 20, 40, .5);
-		
-		//add attacks to list
-		attackList.add(new AttackDefault(this, chanceToHit, damageMin, damageMax));
-		attackList.add(new AttackSurprise(this, chanceToHit, damageMin, damageMax));
-	}//end constructor
-    
-    /*//moved this to its own class
+
+
+
+    }//end constructor
+
 	public void surpriseAttack(DungeonCharacter opponent)
 	{
 		double surprise = Math.random();
@@ -42,8 +40,8 @@ public class Thief extends Hero
 
 
 	}//end surpriseAttack method
-	*/
-    /*
+
+
     public void battleChoices(DungeonCharacter opponent)
 	{
 		super.battleChoices(opponent);
@@ -74,5 +72,4 @@ public class Thief extends Hero
 		} while(numTurns > 0);
 
     }
-    */
 }

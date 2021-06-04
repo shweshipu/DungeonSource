@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 
 /**
  * Title: DungeonCharacter.java
@@ -32,7 +32,7 @@ import java.util.ArrayList;
  * @author
  * @version 1.0
  */
-import java.util.ArrayList;
+
 public abstract class DungeonCharacter implements Comparable
 {
 
@@ -42,22 +42,11 @@ public abstract class DungeonCharacter implements Comparable
 	protected double chanceToHit;
 	protected int damageMin, damageMax;
 
-	protected ArrayList<Attack> attackList;
-	
 	public int compareTo(Object o)
 	{
 		return 1;
 	}
 
-	
-	
-	
-	
-	public ArrayList<Attack> getAttacks() {
-		return attackList;
-	}
-	
-	
 //-----------------------------------------------------------------
 //explicit constructor to initialize instance variables -- it is called
 // by derived classes

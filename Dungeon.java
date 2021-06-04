@@ -82,7 +82,7 @@ this task
 		//hiiiiiiii
 		switch(choice)
 		{
-
+			case 1: return new Warrior();
 
 			case 2: return new Sorceress();
 
@@ -157,8 +157,6 @@ user has the option of quitting.
 		System.out.println(theHero.getName() + " battles " +
 							theMonster.getName());
 		System.out.println("---------------------------------------------");
-		
-		
 
 		//do battle
 		while (theHero.isAlive() && theMonster.isAlive() && pause != 'q')
@@ -168,7 +166,7 @@ user has the option of quitting.
           if(Math.random() < 0.5)
           {
              //hero goes first
-			    TurnManager.battleChoices(theHero, theMonster);
+			    theHero.battleChoices(theMonster);
           }
             //monster's turn (provided it's still alive!)
           else if (theMonster.isAlive())

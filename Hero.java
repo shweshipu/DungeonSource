@@ -32,9 +32,6 @@ public abstract class Hero extends DungeonCharacter
 {
 	protected double chanceToBlock;
 	protected int numTurns;
-	
-	//list of attacks this hero can use
-	
 
 	public int getNumTurns() {
 		return numTurns;

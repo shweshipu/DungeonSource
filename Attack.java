@@ -1,9 +1,5 @@
 
 public abstract class Attack {
-	//identifier name for the DungeonMaster Class
-	String name;
-	
-	//variables for the attack calculations
 	protected boolean canAttack;
 	protected int damage;
 	protected double chanceToHit;
